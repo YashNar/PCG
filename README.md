@@ -1,2 +1,2 @@
 # Pocket-City-Guide
-Android application for city guide
+Android application for city guides.
