@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "772050723814",
+    "firebase_url": "https://intro-eb59e.firebaseio.com",
+    "project_id": "intro-eb59e",
+    "storage_bucket": "intro-eb59e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772050723814:android:ca633d7e694acdea0f2c27",
+        "android_client_info": {
+          "package_name": "com.example.intro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772050723814-7e26h7k88d77si12jq7fs3jlmbk3i045.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQI5CUw2LPTiwMc7-tp7ALQY8iIE6Hx-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772050723814-7e26h7k88d77si12jq7fs3jlmbk3i045.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Intro</string>
+    <string name="access_token">sk.eyJ1IjoiaGFyc2hhZDA4MDIiLCJhIjoiY2tpOGVlYTQ0MDR6YjMwbDdqcjJ4Yjh6aSJ9.UQN4GJ2mi_XV_iKFLQFVhw</string>
+    <string name="start_navigating">Start Navigating</string>
+</resources>

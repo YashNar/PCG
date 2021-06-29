@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shop_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/genral_arrow"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_icon"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shopping"
+            android:textSize="32sp"
+            android:fontFamily="@font/alegreya_sans_sc_bold_italic"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/colaba_causeway" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Colaba Causeway"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="Colaba Causeway is one of the oldest and most busy shopping spots in Mumbai that will spoil you with its many options and good deals." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="3.5" />
+
+                <TextView
+                    android:id="@+id/nav_colaba"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_shop"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/fashion_street" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Fashion Street"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="Fashion Street is the ultimate destination to go for shopping. It's a flea market with shops offering you the most unique and fashionable things to buy." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="4.5" />
+
+                <TextView
+                    android:id="@+id/nav_fs"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_shop"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/linking_road" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Linking Road"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="Linking Road located in the heart of Bandra is one of the best shopping places in Mumbai." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="5" />
+
+                <TextView
+                    android:id="@+id/nav_linking_rd"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_shop"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/lokhandwala_market" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Lokhandwala Market"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="If you are looking for clothes, electronics, accessories or household things to shop, Lokhandwala is the place!" />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="3" />
+
+                <TextView
+                    android:id="@+id/nav_lokhandwala"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_shop"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/zaveri_bazar" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Zaveri Bazaar"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="Zaveri Bazaar is the ideal destination for shopping jewellery and therefore its name ‘Zaveri’, meaning ‘Jewellery’." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/nav_zaveri_bzr"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_shop"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

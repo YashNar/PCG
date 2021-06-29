@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fun_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/genral_arrow"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_icon"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fun"
+            android:textSize="32sp"
+            android:fontFamily="@font/alegreya_sans_sc_bold_italic"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/bangana_tank" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Banganga Tank"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="Banganga Tank is a sacred water tank in the city which is also a prominent sightseeing spot. The ancient tank dates back to the 12th century." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/nav_ban_tank"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_fun"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/dharavi_slum" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Dharavi"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="Well known as the largest slum in Asia, Dharavi was established in the year 1882 by the British in order to relocate the poor population into the urban city." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/nav_dharavi"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_fun"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/essel_world" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Essel World"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="Gear up for one of Asia’s largest amusement parks! Built to replicate the Disney Land model, Essel World in Mumbai makes for an amazingly fun packed day." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/nav_essel_world"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_fun"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/hanging_garden" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Hanging Garden"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="Hanging Garden is the city’s oldest and best preserved park. Very strategically located, the most popular attraction in the park is the giant old lady’s shoe." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/nav_hanging_garden"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_fun"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/juhu_beach" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Juhu Beach"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="For all you beach lovers, Juhu Beach is by far the most accessible and filled with life, practically round the clock." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/nav_juhu_beach"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_fun"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/mahakali_cave" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="Mahakali Caves"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="Mahakali caves Also known as Kondivita Caves, where one would come across 19 rock-cut caves which were carved out starting from the 1st to the 6th century." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/nav_mahakali_cave"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_fun"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/haji_ali" />
+
+                <TextView
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
+                    android:padding="2dp"
+                    android:text="The Haji Ali Moscue"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="191dp"
+                    android:layout_height="137dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:padding="4dp"
+                    android:text="The Haji Ali Mosque at Mumbai is a spectacle off the Worli sea face. Nestled on a shelf off the coast." />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="233dp"
+                    android:layout_marginBottom="25dp"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/nav_haji_ali"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:text="Navigate"
+                    android:onClick="navigate_fun"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
